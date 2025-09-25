@@ -1,0 +1,12 @@
+Notes from 9/12
+1. Start simple and gradually make more expressive
+2. Start too expressive and tone down the expressiveness with regularization -- generally this for linear models
+
+Notes from 9/19
+1. Noise can either be y = Bx + E or y = B1X1 + B2X2. In first we may not know E and in second case we may not know b2x2. In practice statisticians believe that E are always expressable as B2X2. So you just need to find the right variable
+2. 3rd kind of noise is y = f(x1, x2) where f is an interaction of higher order
+3. 1st kind of noise is random noise, second is information you don't have, 3rd is a complex relationship that you don't know yet
+4. In overfitting you are essentially fitting the noise from the current training data, which is why you have different beta for different sample
+5. DNN work in overparameterized regime, while other models work on underparameterized regime. In over-parameterized regime the risk reduces with increasing model complexity. The current hypothesis is there is implicit regularization in NNs
+6. In your models, you have to target the variance of predicted y and bias of y hat
+7. You can use ridge regression to identify underfitting
